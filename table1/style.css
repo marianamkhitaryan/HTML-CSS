@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    border: 1px solid black;
+    width: 635px;
+    height: 220px;
+    border-collapse: collapse;
+}
+th{
+    border: 2px solid black;
+    width: 200px;
+    height: 20px;
+    background-color: rgb(172, 171, 171);
+}
+td{
+    border: 1px solid black;
+    width: 200px;
+    height: 20px;
+}

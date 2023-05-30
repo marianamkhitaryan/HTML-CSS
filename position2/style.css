@@ -1,0 +1,53 @@
+div{
+    width: 200px; 
+    height: 200px;
+}
+.a{
+    background-color: red;
+    position: absolute;
+    z-index: 0;
+    top: 10px;
+    left: 20px;
+}
+.b{
+    background-color: green;
+    position: absolute;
+    z-index: 1;
+    top: 65px;
+    left: 50px;
+}
+.c{
+    background-color: blue;
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    left: 80px;
+}
+.d{
+    background-color: purple;
+    position: absolute;
+    z-index: 3;
+    top: 175px;
+    left: 110px;
+}
+.e{
+    background-color: yellowgreen;
+    position: absolute;
+    z-index: 4;
+    top: 230px;
+    left: 140px;
+}
+.f{
+    background-color: orangered;
+    position: absolute;
+    z-index: 5;
+    top: 285px;
+    left: 170px;
+}
+.g{
+    background-color: rgb(235, 143, 158);
+    position: absolute;
+    z-index: 6;
+    top: 340px;
+    left: 200px;
+}

@@ -1,0 +1,26 @@
+.circle{
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(red, purple, blue);
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+}
+.circle2{
+    margin-left: 20px;
+    border-radius: 50%;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    background-image: linear-gradient(yellow, green)
+}
+.circle3{
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: linear-gradient(purple, rgb(245, 191, 245));
+    float: left;
+    margin-top: 200px;
+}

@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+}
+input{
+    height: 24px;
+}
+select{
+    height: 24px;
+    width: 173px;
+}
+.regist{
+    width: 500px;
+    height: 450px;
+    border-radius: 20%;
+    border: 2px solid rgb(159, 199, 159);
+    text-align: center;
+}
+.gender{
+    width: 173px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.genders{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(159, 199, 159);
+    color: white;
+}
+.date{
+    width: 168px;
+}

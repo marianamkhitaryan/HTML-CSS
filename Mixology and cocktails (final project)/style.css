@@ -1,0 +1,1055 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #B85E0E;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #E97712;
+}
+
+/* MAIN PAGE */
+
+.social{
+    width: 12%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 88%;
+}
+.box{
+    width: 25%;
+    height: 6%;
+    background-color: #B85E0E;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 500ms;
+}
+.box p{
+    transform: translate(10%);
+    display: none;
+    color: #000000;
+}
+.box:hover{
+    width: 80%;
+    background-color: #B85E0E;
+    box-shadow: 0 0 50px #a55f22;
+    padding: 3px;
+}
+.box:hover a{
+    width: 30%;
+    text-decoration: none;
+}
+.box:hover p{
+    display: block;
+}
+.box a{
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box a i{
+    color: #B85E0E;
+    font-weight: bold;
+}
+header{
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+.menubar{
+    width: 21%;
+    height: 100%;
+}
+.menubar div{
+    background-color: black;
+    width: 99.3%;
+    height: 24.87%;
+    border-width: 0px 1px 1px 0px; 
+    border-style: solid;
+    border-color: #7A7A7A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    transition-duration: 1000ms;
+}
+.menubar div:hover{
+    background-color: #E97712;
+    cursor: pointer;
+    box-shadow: 0 0 50px #E97712;
+}
+.menubar div:hover a{
+    color: black;
+    font-weight: bold;
+}
+.menubar div a{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu a i{
+    padding: 0 10px;
+}
+.main{
+    width: 80%;
+    height: 100%;
+    box-sizing: content-box;;
+}
+.logo{
+    background-color: black;
+    width: 100%;
+    height: 24.8%;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #7A7A7A;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.logo_text{
+    width: 30%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo_text h1{
+    color: #E97712;
+    font-family: Apple Color Emoji;
+    font-size: 21px;
+}
+.logo_text p{
+    font-size: 18px;
+    font-family: -webkit-body;
+    font-weight: bolder;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, rgb(143, 67, 0), rgb(244, 151, 68), rgb(143, 67, 0));
+    animation: logo 5s linear infinite;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes logo {
+    from{background-position: -1000%;}
+    to{background-position: 1000%;}
+}
+.slogan{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slogan h4{
+    color: #B85E0E;
+    font-size: 18px;
+    padding: 0 0 40px 0;
+}
+.slogan h1{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: cursive;
+    padding: 0 0 20px 0;
+}
+.slogan h2{
+    color: #a55f22;
+    font-size: 25px;
+    font-family: cursive;
+}
+.inherit_section{
+    background-image: url(images/bg1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+.fresh_tasty{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: flex;
+}
+.text1{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 0 0 70px;
+}
+.button{
+    width: 30%;
+    height: 12%;
+    background-color: #B85E0E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 1000ms;
+}
+.button:hover{
+    background-color: black;
+    border-width: 2px 0;
+    border-color: #B85E0E;
+    border-style: solid;
+    cursor: pointer;
+}
+.button:hover a{
+    color: white;
+    text-decoration: none;
+}
+.button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.text1 h4{
+    color: #B85E0E;
+    font-size: 18px;
+}
+.text1 h1{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: cursive;
+    padding: 30px 0;
+    width: 70%;
+}
+.text1 h2{
+    color: #a55f22;
+    font-size: 25px;
+    font-family: cursive;
+    padding: 0 0 30px 0;
+}
+.cocktail_slide{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    bottom: 200px;
+    left: 100px;
+}
+.map{
+    width: 100%;
+    height: 600px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map-background{
+    width: 75%;
+    height: 70%;
+    background-image: url(images/map-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.map-background iframe{
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    position: relative;
+    bottom: 50px;
+}
+.button-table{
+    width: 18%;
+    height: 12%;
+    background-color: #B85E0E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 1000ms;
+    position: relative;
+    top: 23px;
+}
+.button-table:hover{
+    background-color: black;
+    border-width: 2px 0;
+    border-color: #B85E0E;
+    border-style: solid;
+    cursor: pointer;
+}
+.button-table:hover a{
+    color: white;
+    text-decoration: none;
+}
+.button-table a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.more-details{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about-us:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.our-cocktails:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.about-us{
+    background-image: url(images/our\ bar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 43%;
+    height: 75%;
+    transition-duration: 1500ms;
+    border: 1px solid #7A7A7A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.our-cocktails{
+    background-image: url(images/our\ cocktails.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 43%;
+    height: 75%;
+    transition-duration: 1500ms;
+    border: 1px solid #7A7A7A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.more-details p{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+}
+.info{
+    width: 22%;
+    height: 10%;
+    background-color: #B85E0E;
+    transition: 1000ms;
+}
+.info a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-weight: bold;
+}
+.info:hover{
+    background-color: #000000;
+    cursor: pointer;
+}
+.info:hover a{
+    text-decoration: none;
+    color: #B85E0E;
+}
+.cocktails-menu{
+    width: 22%;
+    height: 10%;
+    background-color: #B85E0E;    
+    transition: 1000ms;
+}
+.cocktails-menu a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-weight: bold;
+}
+.cocktails-menu:hover{
+    background-color: #000000;
+    cursor: pointer;
+}
+.cocktails-menu:hover a{
+    text-decoration: none;
+    color: #B85E0E;
+}
+footer{
+    width: 100%;
+    height: 290px;
+    background-color: black;
+    border-top: 2px solid #7A7A7A;
+}
+.contacts, .footer-logo{
+    width: 20%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.visit{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button-up{
+    height: 15%;
+    width: 18%;
+    background-color: #B85E0E;
+    margin-top: 25px;
+    transition: 1000ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.button-up i{
+    color: white;
+    font-weight: bold;
+}
+.button-up:hover{
+    background-color: #fff;
+    transform: scale(1.2);
+    cursor: pointer;
+    text-decoration: none;
+}
+.button-up:hover i{
+    color: black;  
+}
+.email, .phonenumber, .time, .place{
+    display: flex;
+    align-items: center;
+}
+.footer-logo-text{
+    width: 30%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo-text h1{
+    color: #E97712;
+    font-family: Apple Color Emoji;
+    font-size: 21px;
+}
+.footer-logo-text p{
+    font-size: 18px;
+    font-family: -webkit-body;
+    font-weight: bolder;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, rgb(143, 67, 0), rgb(244, 151, 68), rgb(143, 67, 0));
+    animation: logo 5s linear infinite;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes logo {
+    from{background-position: -1000%;}
+    to{background-position: 1000%;}
+}
+.title{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+footer i{
+    color: #fff;
+    font-weight: bold;
+}
+footer p{
+    color: rgb(197, 197, 197);
+    font-size: 18px;
+    margin-left: 5px;
+}
+.place:hover p{
+    color: #B85E0E;
+    cursor: pointer;
+}
+.time:hover p{
+    color: #B85E0E;
+    cursor: pointer;
+}
+.email:hover p{
+    color: #B85E0E;
+    cursor: pointer;
+}
+.phonenumber:hover p{
+    color: #B85E0E;
+    cursor: pointer;
+}
+.place:hover i{
+    color: #ff5959;
+    cursor: pointer;
+}
+.time:hover i{
+    color: #4f9da6;
+    cursor: pointer;
+}
+.email:hover i{
+    color: #facf5a;
+    cursor: pointer;
+}
+.phonenumber:hover i{
+    color: #233142;
+    cursor: pointer;
+}
+
+
+/* MENU */
+
+.header-for-menu{
+   width: 100%;
+   height: 175px;
+   display: flex;
+}
+.home-button{
+    width: 21%;
+    height: 99.3%;
+    background-color: #000000;
+    border-width: 0px 1px 1px 0px; 
+    border-style: solid;
+    border-color: #7A7A7A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 1000ms;
+}
+.home-button:hover{
+    background-color: #E97712;
+    cursor: pointer;
+    box-shadow: 0 0 50px #E97712;
+}
+.home-button:hover a{
+    color: black;
+    font-weight: bold;
+}
+.home-button a{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-for-menu{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 99.3%;
+    background-color: #000000;
+    border-width: 0px 1px 1px 0px; 
+    border-style: solid;
+    border-color: #7A7A7A;
+}
+.menu-background{
+    background-image: url(images/menu-bg.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.menu-title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: cursive;
+    color: white;
+    background-color: #000000;
+    opacity: 0.7;
+}
+.offer{
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.whatweoffer{
+    color: #B85E0E;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 40px 0;
+}
+.drinksandbites{
+    color: white;
+    font-size: 60px;
+}
+.types{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    width: 25%;
+    height: 80%;
+    cursor: pointer;
+}
+.front-card{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.front-card p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    opacity: 0.7;
+    color: rgb(255 255 255);
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+.type1{
+    background-image: url(images/cocktails-menu.jpg);
+}
+.type2{
+    background-image: url(images/wine-menu.jpg);
+}
+.type3{
+    background-image: url(images/bites-menu.jpg);
+}
+.back-card{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    position: relative;
+    bottom: 320px;
+}
+.type1-1{
+    background-image: url(images/cocktail\ menu\ bg.jpg);
+}
+.type2-1{
+    background-image: url(images/wine\ menu\ bg.jpg);
+}
+.type3-1{
+    background-image: url(images/bites\ menu\ bg.jpg);
+}
+.back-card a{
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    height: 15%;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #B85E0E;
+    font-weight: bold;
+    transition: 1000ms;
+}
+.front-card, .back-card{
+    backface-visibility: hidden;
+    transition: transform 1000ms;
+}
+.card:hover .front-card{
+    transform: rotateY(180deg);
+}
+.card:hover .back-card{
+    transform: rotateY(0);
+}
+.back-card a:hover{
+    background-color: #B85E0E;
+    color: black;
+}
+.menu-lists{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+.list{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.description p{
+    color: #B85E0E;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.description h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px 0;
+    font-family: sans-serif;
+}
+#cocktails-menu{
+    width: 100%;
+    height: 1200px;
+    background-image: url(images/cocktail\ list\ bg.jpg);
+}
+.cocktails-list{
+    width: 80%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-cocktail-list{
+    width: 45%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.second-cocktail-list{
+    width: 45%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.item-c{
+    height: 23%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.item-name{
+    display: flex;
+}
+.item-name div{
+    color: white;
+    font-size: 30px;
+}
+.item-description{
+    color: #B85E0E;
+    font-size: 18px;
+    padding: 30px 0;
+}
+#wines-menu{
+    width: 100%;
+    height: 800px;
+    background-image: url(images/wine\ list\ bg.jpg);
+}
+.wines-list{
+    width: 80%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-w{
+    width: 100%;
+    height: 33%;
+}
+#bites-menu{
+    width: 100%;
+    height: 600px;
+    background-image: url(images/bites\ list\ bg.jpg);
+}
+.bites-list{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.item-b{
+    width: 100%;
+    height: 33%;
+}
+.about-background{
+    background-image: url(images/about\ us-bg.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+.about-title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: cursive;
+    color: white;
+    background-color: #000000;
+    opacity: 0.7;
+}
+.about-mixology{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000000;
+}
+.about-mixology ul{
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    left: 60%;
+}
+.about-mixology ul li{
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    transform-origin: center;
+    transform: rotate(10%) skew(-30deg);
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about-mixology ul li span{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.about-mixology ul li span img{
+    width: 100%;
+    height: 100%;
+}
+.about-mixology ul li:nth-child(1){
+    transform: rotate(10deg) skew(-10deg) translate(15px,15px);
+}
+.about-mixology ul li:nth-child(2){
+    transform: rotate(10deg) skew(-10deg) translate(0,0);
+}
+.about-mixology ul li:nth-child(3){
+    transform: rotate(10deg) skew(-10deg) translate(-15px,-15px);
+}
+.about-mixology ul:hover li:nth-child(1){
+    transform: rotate(5deg) skew(0deg) translate(200px,0);
+    cursor: pointer;
+}
+.about-mixology ul:hover li:nth-child(2){
+    transform: rotate(0deg) skew(0deg) translate(0,0);
+    cursor: pointer;
+}
+.about-mixology ul:hover li:nth-child(3){
+    transform: rotate(-5deg) skew(0deg) translate(-200px,0);
+    cursor: pointer;
+}
+.info-about-mixology{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 90%;
+    position: relative;
+    right: 25%;
+}
+.info-about-mixology h3{
+    color: #B85E0E;
+}
+.main-text{
+    color: white;
+    font-size: 30px;
+    padding: 20px 0;
+    font-weight: bold;
+}
+.info-about-mixology p{
+    color: white;
+    line-height: 1.5;
+}
+.reserve-background{
+    background-image: url(images/reservation-bg.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+.reserve-title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: cursive;
+    color: white;
+    background-color: #000000;
+    opacity: 0.7;
+}
+.reserve-a-table{
+    width: 100%;
+    height: 780px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reserve-a-table img{
+    width: 30%;
+    height: 67%;
+    margin-right: 50px;
+    border-radius: 40px 40px 0 0;
+}
+.register-form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 95%;
+}
+.register-form h3{
+    color: #B85E0E;
+    padding: 40px 0 10px 0;
+}
+.register-form p{
+    color: white;
+    font-size: 50px;
+    padding: 20px 0;
+    font-weight: bold;
+    padding: 20px 0 30px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inputBox input{
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    height: 50px;
+    background-color: inherit;
+    border-bottom: 2px solid #B85E0E;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+}
+.inputBox input:focus{
+    border-bottom: 2px solid white;
+}
+.inputName{
+    color: white;
+    font-size: 18px;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+.row{
+    width: 48%;
+}
+textarea{
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    height: 50px;
+    background-color: inherit;
+    border-bottom: 2px solid #B85E0E;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+}
+textarea:focus{
+    border-bottom: 2px solid white;
+}
+.sendButton{
+    width: 100%;
+    height: 50px;
+    background-color: #B85E0E;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+}
+.sendButton:hover{
+    background-color: black;
+    border-width: 1px 0;
+    border-color: #B85E0E;
+    border-style: solid;
+    color: #B85E0E;
+    cursor: pointer;
+}
